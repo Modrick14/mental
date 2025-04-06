@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Mental Health App',
       theme: ThemeData(primarySwatch: Colors.green),
-      home: AuthCheck(), // Direct to appropriate screen
+      home: const AuthCheck(), // Direct to appropriate screen
     );
   }
 }

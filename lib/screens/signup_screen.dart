@@ -79,7 +79,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   const SizedBox(height: 50),
-                  CircleAvatar(
+                  const CircleAvatar(
                     radius: 50,
                     backgroundImage: AssetImage('assets/peace.jpg'),
                   ),
@@ -134,7 +134,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     obscureText: true,
                     decoration: InputDecoration(
                       hintText: "Enter Password",
-                      suffixIcon: Icon(Icons.visibility_off),
+                      suffixIcon: const Icon(Icons.visibility_off),
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
                       ),
