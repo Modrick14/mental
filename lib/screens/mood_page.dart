@@ -3,6 +3,8 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:fl_chart/fl_chart.dart';
 
 class MoodPage extends StatefulWidget {
+  const MoodPage({super.key});
+
   @override
   _MoodPageState createState() => _MoodPageState();
 }
@@ -70,12 +72,14 @@ class _MoodPageState extends State<MoodPage> {
 }
 
 class MoodChart extends StatelessWidget {
+  const MoodChart({super.key});
+
   @override
   Widget build(BuildContext context) {
     return LineChart(
       LineChartData(
-        gridData: FlGridData(show: false),
-        titlesData: FlTitlesData(show: true),
+        gridData: const FlGridData(show: false),
+        titlesData: const FlTitlesData(show: true),
         borderData: FlBorderData(show: true),
         lineBarsData: [
           LineChartBarData(
@@ -89,9 +93,9 @@ class MoodChart extends StatelessWidget {
               const FlSpot(7, 4),
             ],
             isCurved: true,
-            gradient:
-                LinearGradient(colors: [Colors.purple, Colors.deepPurple]),
-            dotData: FlDotData(show: true),
+            gradient: const LinearGradient(
+                colors: [Colors.purple, Colors.deepPurple]),
+            dotData: const FlDotData(show: true),
           ),
         ],
       ),

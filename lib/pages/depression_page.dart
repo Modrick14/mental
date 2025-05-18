@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'mental_exercise_page.dart'; // Import the Exercise Page
 
 class DepressionPage extends StatefulWidget {
+  const DepressionPage({super.key});
+
   @override
   _DepressionPageState createState() => _DepressionPageState();
 }
@@ -107,7 +109,7 @@ class _DepressionPageState extends State<DepressionPage> {
         onPressed: () {
           Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => MentalExercisePage()),
+            MaterialPageRoute(builder: (context) => const MentalExercisePage()),
           );
         },
         child: const Text("Go to Exercise Page"),
